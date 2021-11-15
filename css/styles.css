@@ -160,6 +160,23 @@ img {
 .main-page {
   color: var(--accent-color);
 }
+.navigation-list.main-page {
+  position: relative;
+}
+.navigation-list.main-page::after {
+  position: absolute;
+
+  bottom: -32px;
+  left: 0;
+
+  content: '';
+  width: 100%;
+  height: 4px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -255,8 +272,33 @@ img {
 .responsibilities-list {
   display: flex;
 }
+
 .responsibilities-item:not(:last-child) {
   margin-right: 30px;
+}
+.responsibilities-animation {
+  position: relative;
+}
+.responsibilities-animation-thumb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+.responsibilities-animation-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 12);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 .section-our-team {
   background-color: #f5f4fa;
