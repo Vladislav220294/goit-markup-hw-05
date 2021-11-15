@@ -563,7 +563,7 @@ img {
   min-width: 528px;
   min-height: 581px;
   transform: translate(-50%, -50%) scale(1);
-
+  border-radius: 2px;
   background-color: var(--primary-background-color);
 }
 .modal-backdrop.is-hidden .modal-thumb {
